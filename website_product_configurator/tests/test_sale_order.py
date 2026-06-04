@@ -7,7 +7,7 @@ class TestSaleOrder(TestProductConfiguratorValues):
     @classmethod
     def setUpClass(cls):
         super().setUpClass()
-        cls.partner = cls.env.ref("base.res_partner_1")
+        cls.partner = cls.env["res.partner"].create({"name": "Test Customer"})
         cls.product = cls.env["product.product"].create({"name": "test product"})
         cls.product_uom_unit = cls.env.ref("uom.product_uom_unit")
         cls.pricelist = cls.env["product.pricelist"].create(
