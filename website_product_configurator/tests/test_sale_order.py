@@ -30,7 +30,7 @@ class TestSaleOrder(TestProductConfiguratorValues):
                         {
                             "product_id": cls.product.id,
                             "name": "Test Line",
-                            "product_uom": cls.product_uom_unit.id,
+                            "product_uom_id": cls.product_uom_unit.id,
                             "product_uom_qty": 2.0,
                             "price_unit": 400.00,
                             "config_session_id": cls.session_id.id,
